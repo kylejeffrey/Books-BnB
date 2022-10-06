@@ -1,9 +1,13 @@
+.hard-offer-row {
+  // max-width: 850px;
+}
+
 .home-book-card {
   position: relative;
   display: inline-block;
   width: 265px;
   box-shadow: 0 0 8px rgba(80, 79, 79, 0.158);
-  margin: 25px;
+  margin: 8px 0;
   padding: 10px 10px 0 10px;
   vertical-align: top;
   transition: height 1s;
@@ -44,9 +48,14 @@
   }
 }
 
+.home-cover {
+  display: flex;
+  justify-content: center;
+}
+
 .home-cover-img {
-  height: 400px;
-  width: 240px;
+  height: 320px;
+  width: 200px;
   border-radius: 4px;
   overflow: hidden;
 }
