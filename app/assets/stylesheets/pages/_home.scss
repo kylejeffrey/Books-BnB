@@ -1,11 +1,18 @@
 // Specific CSS for your home-page
 // use this photo as background image https://images.unsplash.com/photo-1614791962365-7590111b1b1c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80
 
+.content {
+  display: flex;
+  justify-content: center;
+}
+
 .hero {
-  position: relative;
+  // position: relative;
+  display: flex;
+  justify-content: center;
   height: 75vh;
   // width: 100vw;
-  margin-left: 480px;
+  // margin-left: 480px;
   color: rgb(229, 229, 229);
 }
 
@@ -19,7 +26,7 @@
   width: 55vw;
   height: 65vh;
   position: absolute;
-  right: 28%;
+  // right: 28%;
   text-align: center;
 }
 
@@ -77,6 +84,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+#card-content-button {
+  // margin-top: 3rem;
+}
+
 input {
   width: 100%;
   margin-top: 1rem;
@@ -97,33 +108,39 @@ input:focus {
 
 @media (max-width: 1383px) {
   .hero {
-    height: 100vh;
-    width: 100vw;
+    // height: 100vh;
+    // width: 100vw;
   }
   .hero-content {
-    width: 55vw;
-    height: 65vh;
-    right: 28%;
+    // width: 55vw;
+    // height: 65vh;
+    // right: 28%;
   }
   .card {
-    width: 20vw;
-    height: 45vh;
-    left: -28%;
+    // width: 20vw;
+    // height: 45vh;
+    // left: -28%;
+  }
+  .features-card {
+    display: none;
   }
 }
 
 @media (max-width: 1050px) {
   .hero {
-    width: 100vw;
+    // width: 100vw;
   }
   .hero-content {
-    width: 55vw;
-    height: 65vh;
-    right: 28%;
+    // width: 55vw;
+    min-width: 340px;
+    // height: 65vh;
+    // right: 28%;
+    display: flex;
+    flex-direction: column;
   }
   .card {
-    width: 20vw;
-    height: 45vh;
+    // width: 20vw;
+    // height: 45vh;
     left: -28%;
   }
   .card-title-header {
@@ -142,18 +159,51 @@ input:focus {
 }
 
 @media (max-width: 767px) {
+  // .container {
+  //   margin: 0;
+  // }
+  .navbar {
+    margin-bottom: 10px !important;
+  }
+
+  .card {
+    width: 80%;
+    height: 200px;
+    position: absolute;
+    top: inherit;
+    left: inherit;
+    bottom: 56px;
+    align-self: center;
+  }
   .card-title-header {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .card-content p {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
+
+    #card-content-button {
+      margin-top: 0 !important;
+    }
   }
   input {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
+    margin: 0;
+    margin-bottom: 8px;
   }
   .btn.btn-primary-red {
     padding: 0.5rem 1rem;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
+    width: 100%;
+  }
+  .hero-content {
+    height: 87vh;
+
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
+  .footer {
+    display: none;
   }
 }
 
